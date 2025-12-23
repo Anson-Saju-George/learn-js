@@ -4,7 +4,7 @@ console.log("Hello world! \nThis world is beautiful.\nLet's learn JavaScript.");
 console.log("JavaScript is fun and powerful!");
 const message = "Keep learning and practicing.";
 console.log(message);
-let farewell = "Goodbye!";
+farewell = "Goodbye!"; // Implicit global variable
 console.log(farewell);
 console.log("");
 let name = "Anson";
@@ -72,3 +72,15 @@ for (let color of colors) {
     console.log("Color: " + color);
 }
 
+Type = typeof age;
+console.log("Type of age variable:", Type);
+console.log(typeof person);
+
+console.log(typeof greet);
+console.log(person.age);
+console.log(person.age instanceof Number);
+console.log(colors instanceof Array);
+console.log(farewell instanceof String);
+console.log(person['firstName']);
+console.log(person.firstName);
+console.log(colors[1]);
