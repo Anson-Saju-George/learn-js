@@ -253,7 +253,6 @@ console.log(sampleArray); // Output: [0, -1, 3, 4, 5]
 // Arrays are versatile and powerful, making them a fundamental part of JavaScript programming.
 
 
-
 // Demonstration of push, unshift, pop, replace, and shift methods
 // Push adds an element to the end of the array
 let colors = ['Red', 'Green', 'Blue'];
