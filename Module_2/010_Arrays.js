@@ -188,7 +188,7 @@ console.log(commonElements); // Output: [3]
 
 // 35. Creating an array of objects
 let objectArray = fruits.map((fruit, index) => ({id: index + 1, name: fruit}));
-console.log(objectArray); 
+console.log(objectArray);
 // Output: [{id: 1, name: 'Cherry'}, {id: 2, name: 'Carrot'}, {id: 3, name: 'Broccoli'}]
 
 // 36. Grouping array elements by a property
@@ -200,7 +200,7 @@ let groupedByLength = food.reduce((acc, item) => {
     acc[length].push(item);
     return acc;
 }, {});
-console.log(groupedByLength); 
+console.log(groupedByLength);
 // Output: {6: ['Cherry', 'Carrot'], 8: ['Broccoli']}
 
 
@@ -250,5 +250,26 @@ console.log(shiftedElements); // Output: [1, 2]
 let newLength = unshiftMultiple(sampleArray, [0, -1]);
 console.log(sampleArray); // Output: [0, -1, 3, 4, 5]
 
-
 // Arrays are versatile and powerful, making them a fundamental part of JavaScript programming.
+
+
+
+// Demonstration of push, unshift, pop, replace, and shift methods
+// Push adds an element to the end of the array
+let colors = ['Red', 'Green', 'Blue'];
+colors.push('Yellow');
+console.log(colors); // Output: ['Red', 'Green', 'Blue', 'Yellow']
+// Unshift adds an element to the beginning of the array
+colors.unshift('Purple');
+console.log(colors); // Output: ['Purple', 'Red', 'Green', 'Blue', 'Yellow']
+// Pop removes the last element from the array
+colors.pop();
+console.log(colors); // Output: ['Purple', 'Red', 'Green', 'Blue']
+// Replace an element at a specific index
+colors[1] = 'Orange';
+console.log(colors); // Output: ['Purple', 'Orange', 'Green', 'Blue']
+// Shift removes the first element from the array
+colors.shift();
+console.log(colors); // Output: ['Orange', 'Green', 'Blue']
+
+// This code demonstrates the basic operations that can be performed on arrays in JavaScript.
