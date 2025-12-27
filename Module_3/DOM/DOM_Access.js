@@ -8,6 +8,9 @@
 // 6. Modifying element attributes and styles
 // 7. Removing elements
 
+console.log("");
+console.log("DOM Access Examples");
+
 // 1. Selecting elements by ID
 const elementById = document.getElementById("heading");
 console.log(elementById);
@@ -37,3 +40,5 @@ console.dir(firstSubheading);
 const allSubheadings = document.querySelectorAll(".subheading");
 console.log(allSubheadings);
 console.dir(allSubheadings);
+
+console.log("");
