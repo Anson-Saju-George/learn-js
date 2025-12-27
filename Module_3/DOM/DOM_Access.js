@@ -22,3 +22,18 @@ console.dir(elementsByClassName);
 const elementsByTagName = document.getElementsByTagName("p");
 console.log(elementsByTagName);
 console.dir(elementsByTagName);
+
+// 4. Using query selectors
+const firstParagraph = document.querySelector("p");
+console.log(firstParagraph);
+console.dir(firstParagraph);
+const allParagraphs = document.querySelectorAll("p");
+console.log(allParagraphs);
+console.dir(allParagraphs);
+
+const firstSubheading = document.querySelector(".subheading");
+console.log(firstSubheading);
+console.dir(firstSubheading);
+const allSubheadings = document.querySelectorAll(".subheading");
+console.log(allSubheadings);
+console.dir(allSubheadings);
