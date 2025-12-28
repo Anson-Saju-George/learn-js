@@ -12,6 +12,10 @@ h1 {
   color: green;
   padding: 0px 0px;
   margin: 10px 0px;
+  background-color: rgba(211, 211, 211, 0.882);
+  border-radius: 5px;
+  /* display: inline-block; */
+  
 }
 
 button {
@@ -54,4 +58,16 @@ div {
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+#new-container {
+  /* border: 3px dashed red; */
+  padding: 15px;
+  margin-top: 15px;
+  background-color: lightgray;
+}
+
+#new-container-span {
+  font-weight: bold;
+  color: darkblue;
 }

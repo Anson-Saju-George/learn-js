@@ -5,11 +5,10 @@ console.log("DOM Manipulation Examples");
 // Using the same HTML structure as in the previous examples.
 // With tagName, innerText, innerHTML, textContent, and style properties.
 
-
 const heading = document.getElementById("heading");
 console.log("Original Heading Element:", heading);
-console.dir(heading);
-// Changing text using innerText
-heading.innerText = "Hello DOM Manipulation!";
+console.dir(heading.innerHTML);
+// 3 Changing text using innerText
+heading.innerText = "Hello DOM Manipulated!";
 console.log("Updated Heading Element (innerText):", heading);
 console.dir(heading);
