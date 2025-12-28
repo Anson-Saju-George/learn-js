@@ -4,9 +4,6 @@
 // 2. Selecting elements by class name
 // 3. Selecting elements by tag name
 // 4. Using query selectors
-// 5. Creating and appending new elements
-// 6. Modifying element attributes and styles
-// 7. Removing elements
 
 console.log("");
 console.log("DOM Access Examples");
@@ -40,5 +37,9 @@ console.dir(firstSubheading);
 const allSubheadings = document.querySelectorAll(".subheading");
 console.log(allSubheadings);
 console.dir(allSubheadings);
+// query selector with ID
+const headingById = document.querySelector("#heading");
+console.log(headingById);
+console.dir(headingById);
 
 console.log("");
