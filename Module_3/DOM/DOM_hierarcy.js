@@ -33,8 +33,8 @@ console.log("Last Child of Container:", lastChild);
 console.dir(lastChild);
 
 // Accessing parent node
-const heading = document.getElementById("heading");
-const parentOfHeading = heading.parentNode;
+const title = document.getElementById("heading");
+const parentOfHeading = title.parentNode;
 console.log("Parent of Heading:", parentOfHeading);
 console.dir(parentOfHeading);
 
@@ -47,5 +47,3 @@ const previousSibling = firstParagraph.previousSibling;
 console.log("Previous Sibling of First Paragraph:", previousSibling);
 console.dir(previousSibling);
 console.log("");
-
-
