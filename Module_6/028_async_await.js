@@ -19,8 +19,11 @@ function api() {
 // Using async-await to handle asynchronous operations sequentially
 async function getWeatherData() {
   console.log("Fetching weather data...");
+  conso9le.log("Getting data 1 from API");
   await getData("Weather 1");
+  console.log("Getting data 2 from API");
   await getData("Weather 2");
+  console.log("Getting data 3 from API");
   await getData("Weather 3");
   console.log("All weather data fetched!");
 }
