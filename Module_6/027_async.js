@@ -17,12 +17,14 @@ function asyncFunc() {
   });
 }
 
+// This is known as "Promise Handling"
 console.log("Calling async function 1 has begun...");
 let p1 = asyncFunc();
 p1.then((value) => {
   console.log(value);
 });
 
+// This is also known as "Promise Chaining"
 console.log("Calling async function 2 has begun...");
 let p2 = asyncFunc();
 p2.then((value) => {
@@ -33,3 +35,32 @@ p2.then((value) => {
     console.log(value);
   });
 });
+// Another way of handling Promises using async/await syntax
+
+function getData(dataId) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`Data ${dataId} fetched from server!`);
+      resolve(`Data ${dataId} Resolved!`);
+    }, 2000);
+  });
+}
+
+setTimeout(() => {
+  console.log("Async after 5 seconds:");
+  getData(1).then(getData(2).then(getData(3)));
+}, 5000);
+
+setTimeout(() => {
+  console.log("Async after 8 seconds:");
+  getData("10").then(getData("20")).then(getData("30")).then(getData("40"));
+}, 8000);
+
+// Using async function to handle Promises
+async function getWeatherData() {
+    console.log("Fetching weather data...");
+    await getData("Weather 1");
+    await getData("Weather 2");
+    await getData("Weather 3");
+    console.log("All weather data fetched!");
+};
