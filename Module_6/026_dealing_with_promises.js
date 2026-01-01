@@ -34,7 +34,9 @@ promise
     console.log("Error:(catch)", error);
   })
   .finally(() => {
-    console.log("Finally: Promise has been settled (either fulfilled or rejected).");
+    console.log(
+      "Status:(Finally) Promise has been settled (either fulfilled or rejected)."
+    );
   });
 console.log(promise); // This will log a Promise in pending state
 // Alternatively, using async/await syntax to handle Promises
@@ -45,3 +47,14 @@ console.log(promise); // This will log a Promise in pending state
 setTimeout(() => {
   console.log("Promise after 5 seconds:", promise);
 }, 5000);
+
+setTimeout(() => {
+  console.log("Promise after 8 seconds:", promise);
+  promise
+    .then((value) => {
+      console.log("Promise fulfilled with value:", value);
+    })
+    .catch((reason) => {
+      console.log("Promise rejected with reason:", reason);
+    });
+}, 8000);
