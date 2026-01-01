@@ -1,21 +1,12 @@
-const URL = "https://jsonplaceholder.typicode.com/posts/1";
+const URL = "https://catfact.ninja/fact";
+const factPara = document.getElementById("fact");
+const btn = document.getElementById("fetchFact");
 
-console.log("Before fetch call");
-fetch(URL)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok " + response.statusText);
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Data fetched successfully:", data);
-  })
-  .catch((error) => {
-    console.error("There has been a problem with your fetch operation:", error);
-  })
-  .finally(() => {
-    console.log("Fetch operation completed");
-  });
-
-console.log("After fetch call");
+const getFacts = async () => {
+  console.log("getting data .....");
+  let response = await fetch(URL);
+  console.log(response); // JSON format
+  let data = await response.json();
+  factPara.innerText = data.fact;
+};
+btn.addEventListener("click", getFacts);
