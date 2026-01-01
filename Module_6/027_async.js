@@ -56,11 +56,4 @@ setTimeout(() => {
   getData("10").then(getData("20")).then(getData("30")).then(getData("40"));
 }, 8000);
 
-// Using async function to handle Promises
-async function getWeatherData() {
-    console.log("Fetching weather data...");
-    await getData("Weather 1");
-    await getData("Weather 2");
-    await getData("Weather 3");
-    console.log("All weather data fetched!");
-};
+
