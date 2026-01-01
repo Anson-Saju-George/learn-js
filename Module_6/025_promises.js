@@ -46,7 +46,13 @@ function getData(dataId, getNextData) {
   });
 }
 
+// Promise has 3 states: pending, fulfilled, rejected
+
+// Promise objects has 3 main methods: then, catch, finally
+// then: to handle success
+// catch: to handle failure
+// finally: to execute code regardless of the outcome
+
 // In console use the following to test the function:
 // > result = getData(123);
 // > result // returns a Promise object
-
