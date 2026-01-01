@@ -19,7 +19,7 @@ function api() {
 // Using async-await to handle asynchronous operations sequentially
 async function getWeatherData() {
   console.log("Fetching weather data...");
-  conso9le.log("Getting data 1 from API");
+  console.log("Getting data 1 from API");
   await getData("Weather 1");
   console.log("Getting data 2 from API");
   await getData("Weather 2");
@@ -30,14 +30,20 @@ async function getWeatherData() {
 
 getWeatherData();
 
+console.log("After calling getWeatherData function.");
+
+setTimeout(() => {
+  console.log("This message is shown after 10 seconds.");
+}, 10000);
+
 // This is an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined
 (async function getWeatherData() {
-  console.log("Fetching weather data...");
-  conso9le.log("Getting data 1 from API");
-  await getData("Weather 1");
-  console.log("Getting data 2 from API");
-  await getData("Weather 2");
-  console.log("Getting data 3 from API");
-  await getData("Weather 3");
+  console.log("> Fetching weather data...");
+  console.log("> Getting data 1 from API");
+  await getData("> Weather 1");
+  console.log("> Getting data 2 from API");
+  await getData("> Weather 2");
+  console.log("> Getting data 3 from API");
+  await getData("> Weather 3");
   console.log("All weather data fetched!");
 })();
