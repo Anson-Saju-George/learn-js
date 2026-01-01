@@ -42,10 +42,11 @@ function getData(dataId, getNextData) {
         getNextData();
       }
       resolve("SUCCESS!"); // indicate success - resolve(dataId); would also work
-    }, 5000);
+    }, 1000);
   });
 }
 
+console.log("End of Module 6: 25");
 // Promise has 3 states: pending, fulfilled, rejected
 
 // Promise objects has 3 main methods: then, catch, finally
