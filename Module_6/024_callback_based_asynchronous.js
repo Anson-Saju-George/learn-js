@@ -24,8 +24,13 @@ getData(1, () => {
 
 // start another async chain
 getData(4);
-// This code demonstrates callback-based asynchronous programming in JavaScript. It defines a function getData that simulates fetching data asynchronously using setTimeout.
+
+// This code demonstrates callback-based asynchronous programming in JavaScript. It defines a
+// function getData that simulates fetching data asynchronously using setTimeout.
 // After fetching each piece of data, it calls the next function in the chain via a callback,
 // resulting in sequential asynchronous operations.
-// This pattern can lead to "callback hell" when many nested callbacks are used, making the code harder to read and maintain.
-// In modern JavaScript, Promises and async/await are often used to handle asynchronous operations more cleanly.
+
+// This pattern can lead to "callback hell" aka "Pyramid of Doom" when many nested callbacks
+// are used, making the code harder to read and maintain.
+// In modern JavaScript, Promises and async/await are often used to handle asynchronous
+// operations more cleanly.
